@@ -32,7 +32,7 @@ function chooseExpenses(){
 }
 chooseExpenses();
 function detectDayBudget(){
-    appData.moneyPerDay = (appData.money/30).toFixed();
+    appData.moneyPerDay = (appData.money/30).toFixed(1);
     alert("Ваш бюджет на день: " + appData.moneyPerDay);
 };
 detectDayBudget();
