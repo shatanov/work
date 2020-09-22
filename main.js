@@ -62,22 +62,7 @@ let appData = {
                 };
              };
         },
-        chooseIncome: function(){
-            let items = prompt("Что принесет дополнительный доход? (Перечислите через запятую)", "");
-            for(let i = 0; i < 1; i++){
-                if (items != "" && items != null){
-                    appData.income = items.split(", ");
-                    appData.income.push(prompt("Может что-то еще?", ""));
-                    appData.income.sort();
-                } else {
-                    i= i - 1;
-                };
-            };
-                
-            appData.income.forEach((item, index) =>{
-                alert(`${index} : ${item}`)
-            });
-        }
+        
 };
 
 appData.chooseExpenses();
